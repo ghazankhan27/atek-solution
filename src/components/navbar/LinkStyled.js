@@ -6,7 +6,7 @@ export default function LinkStyled({ path, label, func }) {
     <Link to={path}>
       <p
         onClick={func}
-        className="duration-300 hover:text-red-600 mx-4 text-blue-900 border-b-2 border-neutral-400 md:border-0 py-2 text-3xl md:text-xl font-semibold"
+        className="text-right duration-300 hover:text-red-600 md:mx-4 text-blue-900 md:text-xl font-semibold"
       >
         {label}
       </p>
