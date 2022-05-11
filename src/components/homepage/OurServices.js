@@ -52,7 +52,7 @@ export default function OurServices() {
 
   const card = (title, descp, route) => {
     return (
-      <div className="flex flex-col bg-stone-100 px-6 py-16 shadow-gray-400 shadow-sm ">
+      <div className="overflow-auto flex flex-col bg-stone-100 px-4 md:py-6 py-2 shadow-gray-400 shadow-sm h-80">
         <p className="text-bold text-xl md:text-2xl">{title}</p>
         <p className="mt-4 text-sm md:text-base">{descp}</p>
         <Link to={route}>
@@ -64,8 +64,10 @@ export default function OurServices() {
 
   const cardsGrid = () => {
     return (
-      <div className="relative md:-top-6 grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-6 mx-4 my-4 md:my-0 md:mx-16">
-        {data.map((item) => card(item.title, item.desc, item.route))}
+      <div className="relative md:-top-6 grid grid-cols-2 md:grid-cols-3 gap-x-4 md:gap-x-8 gap-y-6 mx-4 my-4 md:my-0 md:mx-16">
+        {data.map((item, index) => (
+          <div key={index}>{card(item.title, item.desc, item.route)}</div>
+        ))}
       </div>
     );
   };

@@ -10,7 +10,7 @@ export default function WeAreHiringImageBG() {
         </div>
         <div>
           <Link to={"careers"}>
-            <p className="absolute top-20 -translate-x-20 md:-translate-x-36 md:px-20 px-10 py-2 md:text-xl md:text-center text-white bg-red-600 hover:bg-blue-900 transition-colors duration-300">
+            <p className="text-xs absolute top-20 -translate-x-20 md:-translate-x-36 md:px-20 px-10 py-2 md:text-xl md:text-center text-white bg-red-600 hover:bg-blue-900 transition-colors duration-300">
               We are hiring!!
             </p>
           </Link>
@@ -23,12 +23,12 @@ export default function WeAreHiringImageBG() {
     return (
       <div>
         <Link to={"careers"}>
-          <button className="md:px-6 md:py-4 px-2 py-1 bg-blue-900 text-white duration-300 hover:bg-red-600">
+          <button className="text-sm md:px-6 md:py-4 px-2 py-1 bg-blue-900 text-white duration-300 hover:bg-red-600">
             +
           </button>
         </Link>
         <Link to={"careers"}>
-          <button className="md:px-6 md:py-4 px-2 py-1 bg-red-600  text-white duration-300 hover:bg-blue-900">
+          <button className="text-sm md:px-6 md:py-4 px-2 py-1 bg-red-600  text-white duration-300 hover:bg-blue-900">
             Find Out More
           </button>
         </Link>
