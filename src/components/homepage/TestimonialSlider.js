@@ -47,5 +47,9 @@ export default function TestimonialSlider() {
     );
   };
 
-  return <div className="bg-stone-200">{myCarousal()}</div>;
+  return (
+    <div className="bg-stone-200 md:py-16 my-20 md:my-36 md:border-b-8 border-b-4 border-blue-900 shadow-lg">
+      {myCarousal()}
+    </div>
+  );
 }

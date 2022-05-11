@@ -19,12 +19,32 @@ export default function LinksList() {
         <AiOutlineMenu></AiOutlineMenu>
       </div>
       <div className={show + " md:flex mt-4 md:mt-0 transition-all"}>
-        <LinkStyled path={"/"} label={"Home"}></LinkStyled>
-        <LinkStyled path={"/careers"} label={"Careers"}></LinkStyled>
-        <LinkStyled path={"/careers"} label={"Why Choose Us"}></LinkStyled>
-        <LinkStyled path={"/careers"} label={"Our Services"}></LinkStyled>
-        <LinkStyled path={"/careers"} label={"Industries"}></LinkStyled>
-        <LinkStyled path={"/careers"} label={"Contact Us"}></LinkStyled>
+        <LinkStyled func={changeShow} path={"/"} label={"Home"}></LinkStyled>
+        <LinkStyled
+          func={changeShow}
+          path={"/careers"}
+          label={"Careers"}
+        ></LinkStyled>
+        <LinkStyled
+          func={changeShow}
+          path={"/careers"}
+          label={"Why Choose Us"}
+        ></LinkStyled>
+        <LinkStyled
+          func={changeShow}
+          path={"/careers"}
+          label={"Our Services"}
+        ></LinkStyled>
+        <LinkStyled
+          func={changeShow}
+          path={"/careers"}
+          label={"Industries"}
+        ></LinkStyled>
+        <LinkStyled
+          func={changeShow}
+          path={"/careers"}
+          label={"Contact Us"}
+        ></LinkStyled>
       </div>
     </div>
   );

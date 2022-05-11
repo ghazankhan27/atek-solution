@@ -73,7 +73,7 @@ export default function OurServices() {
   };
 
   return (
-    <div>
+    <div className="md:my-0 my-20">
       {description()}
       {cardsGrid()}
     </div>
