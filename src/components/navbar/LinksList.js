@@ -10,6 +10,11 @@ export default function LinksList() {
     else setShow("hidden");
   };
 
+  const changeAndScrollTo = () => {
+    let elem = document.getElementById("ourservices");
+    elem.scrollIntoView();
+  };
+
   return (
     <div className="flex flex-col items-end mt-6 md:mt-0">
       <div
@@ -27,22 +32,22 @@ export default function LinksList() {
         ></LinkStyled>
         <LinkStyled
           func={changeShow}
-          path={"/careers"}
+          path={"/why-choose-us"}
           label={"Why Choose Us"}
         ></LinkStyled>
         <LinkStyled
           func={changeShow}
-          path={"/careers"}
+          path={"/"}
           label={"Our Services"}
         ></LinkStyled>
         <LinkStyled
           func={changeShow}
-          path={"/careers"}
+          path={"/industries"}
           label={"Industries"}
         ></LinkStyled>
         <LinkStyled
           func={changeShow}
-          path={"/careers"}
+          path={"/"}
           label={"Contact Us"}
         ></LinkStyled>
       </div>

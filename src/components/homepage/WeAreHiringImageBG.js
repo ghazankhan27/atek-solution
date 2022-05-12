@@ -22,12 +22,12 @@ export default function WeAreHiringImageBG() {
   const findOutMoreButton = () => {
     return (
       <div>
-        <Link to={"careers"}>
+        <Link to={"why-choose-us"}>
           <button className="text-sm md:px-6 md:py-4 px-2 py-1 bg-blue-900 text-white duration-300 hover:bg-red-600">
             +
           </button>
         </Link>
-        <Link to={"careers"}>
+        <Link to={"why-choose-us"}>
           <button className="text-sm md:px-6 md:py-4 px-2 py-1 bg-red-600  text-white duration-300 hover:bg-blue-900">
             Find Out More
           </button>

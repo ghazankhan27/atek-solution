@@ -12,7 +12,6 @@ export default function Home() {
       <OurServices></OurServices>
       <TestimonialSlider></TestimonialSlider>
       <FindOutMore></FindOutMore>
-      <ContactUs></ContactUs>
     </div>
   );
 }
