@@ -10,9 +10,10 @@ export default function LinksList() {
     else setShow("hidden");
   };
 
-  const changeAndScrollTo = () => {
-    let elem = document.getElementById("ourservices");
-    elem.scrollIntoView();
+  const changeAndScrollTo = (route) => {
+    changeShow();
+    let elem = document.getElementById(route);
+    elem.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -36,7 +37,7 @@ export default function LinksList() {
           label={"Why Choose Us"}
         ></LinkStyled>
         <LinkStyled
-          func={changeShow}
+          func={() => changeAndScrollTo("ourservices")}
           path={"/"}
           label={"Our Services"}
         ></LinkStyled>
@@ -46,7 +47,7 @@ export default function LinksList() {
           label={"Industries"}
         ></LinkStyled>
         <LinkStyled
-          func={changeShow}
+          func={() => changeAndScrollTo("contactform")}
           path={"/"}
           label={"Contact Us"}
         ></LinkStyled>

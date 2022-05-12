@@ -67,7 +67,10 @@ export default function ContactUs() {
 
   return (
     <>
-      <div className="bg-blue-900 text-neutral-200 py-20 pb-0 flex flex-col items-center">
+      <div
+        id="contactform"
+        className="bg-blue-900 text-neutral-200 py-20 pb-0 flex flex-col items-center"
+      >
         <p className="md:text-center text-5xl">Contact Us</p>
         <div className="flex flex-col items-center text-xl w-fit">
           <div className="flex flex-col md:flex-row justify-center md:mt-20">
