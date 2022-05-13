@@ -6,7 +6,12 @@ export default function WeAreHiringImageBG() {
     return (
       <div className="relative flex flex-col items-center md:w-11/12">
         <div>
-          <img className="z-0" width="100%" src="/images/image-home.webp"></img>
+          <img
+            alt="home"
+            className="z-0"
+            width="100%"
+            src="/images/image-home.webp"
+          ></img>
         </div>
         <div>
           <Link to={"careers"}>

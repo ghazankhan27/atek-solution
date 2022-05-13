@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 export default function FinancialServices() {
@@ -25,7 +24,7 @@ export default function FinancialServices() {
             href={"mailto:info@ateksolutionservice.com"}
             className="text-blue-900 underline"
           >
-            <span>{" " + "contact us "}</span>
+            <span>{" contact us "}</span>
           </a>
           today to learn more.
           <br></br>

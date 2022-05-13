@@ -24,9 +24,7 @@ export default function ConstructionStaffing() {
           If you're looking for top talent, below is a sample of skill sets we
           specialize in. If you don't see what you are looking for here,
           <span className="underline text-blue-900">
-            <a href="mailto:info@ateksolutionservice.com">
-              {" " + "contact us" + " "}
-            </a>
+            <a href="mailto:info@ateksolutionservice.com">{" contact us "}</a>
           </span>
           today to learn more.
         </p>
