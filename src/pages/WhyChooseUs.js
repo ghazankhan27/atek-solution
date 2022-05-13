@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import TitleWrapper from "../components/TitleWrapper";
 
 export default function WhyChooseUs() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const data = [
     {
       id: "01.",
@@ -31,8 +36,15 @@ export default function WhyChooseUs() {
 
   return (
     <div>
+      <TitleWrapper
+        title={"Why Choose Us | Staffing & IT Service"}
+      ></TitleWrapper>
       <div className="md:w-11/12 border-blue-900 border-b-8">
-        <img className="w-screen" src="/images/image why choose us.webp"></img>
+        <img
+          alt="why choose us home"
+          className="w-screen"
+          src="/images/image why choose us.webp"
+        ></img>
       </div>
       <div className="bg-stone-100 p-8 mx-4 md:w-3/5 md:mx-auto my-24 md:my-36">
         <p className="md:text-6xl text-4xl text-blue-900 font-semibold">

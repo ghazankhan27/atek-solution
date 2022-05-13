@@ -1,19 +1,14 @@
 import React, { useState } from "react";
 import LinkStyled from "./LinkStyled";
 import { AiOutlineMenu } from "react-icons/ai";
+import HashLinkStyled from "./HashLinkStyled";
 
 export default function LinksList() {
   const [show, setShow] = useState("hidden");
 
   const changeShow = () => {
-    if (show == "hidden") setShow("");
+    if (show === "hidden") setShow("");
     else setShow("hidden");
-  };
-
-  const changeAndScrollTo = (route) => {
-    changeShow();
-    let elem = document.getElementById(route);
-    elem.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -36,21 +31,21 @@ export default function LinksList() {
           path={"/why-choose-us"}
           label={"Why Choose Us"}
         ></LinkStyled>
-        <LinkStyled
-          func={() => changeAndScrollTo("ourservices")}
-          path={"/"}
+        <HashLinkStyled
+          func={changeShow}
+          path={"/#ourservices"}
           label={"Our Services"}
-        ></LinkStyled>
+        ></HashLinkStyled>
         <LinkStyled
           func={changeShow}
           path={"/industries"}
           label={"Industries"}
         ></LinkStyled>
-        <LinkStyled
-          func={() => changeAndScrollTo("contactform")}
-          path={"/"}
+        <HashLinkStyled
+          func={changeShow}
+          path="/#contactform"
           label={"Contact Us"}
-        ></LinkStyled>
+        ></HashLinkStyled>
       </div>
     </div>
   );

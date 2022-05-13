@@ -1,9 +1,10 @@
+.industry-image {
+  height: 80vh;
+}
+
 @media screen and (max-width: 768px) {
   .industry-image {
     height: auto;
+    width: 100%;
   }
-}
-
-.industry-image {
-  height: 80vh;
 }

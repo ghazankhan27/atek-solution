@@ -47,12 +47,16 @@ export default function ContactUs() {
             </div>
             <div>
               <p className="mt-4 font-bold">Email</p>
-              <p>info@ateksolutionservice.com</p>
+              <p>
+                <a href="mailto:info@ateksolutionservice.com">
+                  info@ateksolutionservice.com
+                </a>
+              </p>
             </div>
           </div>
           <div>
             <p className="mt-4 font-bold">Tel</p>
-            <p>+1 484-713 -9273</p>
+            <p>+1 484-713-9273</p>
             <p>+1 313-329-4859</p>
           </div>
         </div>

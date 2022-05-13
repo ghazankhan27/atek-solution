@@ -1,8 +1,10 @@
 import React from "react";
+import TitleWrapper from "../components/TitleWrapper";
 
 export default function Careers() {
   return (
     <div className="flex flex-col mb-2">
+      <TitleWrapper title={"Careers | Staffing & IT Service"}></TitleWrapper>;
       <div className="md:pl-64 pl-10 mt-10">
         <p className="md:text-5xl text-4xl text-red-600">
           Find your Next Opportunity
