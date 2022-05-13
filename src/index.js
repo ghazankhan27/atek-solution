@@ -8,6 +8,12 @@ import Careers from "./pages/Careers";
 import WhyChooseUs from "./pages/WhyChooseUs";
 import Industries from "./pages/Industries";
 import NotFoundPage from "./pages/NotFoundPage";
+import SupportConsulting from "./pages/SupportConsulting";
+import CloudSolutions from "./pages/CloudSolutions";
+import FinancialServices from "./pages/FinancialServices";
+import HealthCareStaffing from "./pages/HealthCareStaffing";
+import ConstructionStaffing from "./pages/ConstructionStaffing";
+import EngineeringSupport from "./pages/EngineeringSupport";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +28,30 @@ root.render(
           element={<WhyChooseUs></WhyChooseUs>}
         ></Route>
         <Route path="industries" element={<Industries></Industries>}></Route>
+        <Route
+          path="support-consulting"
+          element={<SupportConsulting></SupportConsulting>}
+        ></Route>
+        <Route
+          path="cloud-solutions"
+          element={<CloudSolutions></CloudSolutions>}
+        ></Route>
+        <Route
+          path="disaster-recovery"
+          element={<FinancialServices></FinancialServices>}
+        ></Route>
+        <Route
+          path="cloud-desktop"
+          element={<HealthCareStaffing></HealthCareStaffing>}
+        ></Route>
+        <Route
+          path="network-solutions"
+          element={<ConstructionStaffing></ConstructionStaffing>}
+        ></Route>
+        <Route
+          path="managed-it-services"
+          element={<EngineeringSupport></EngineeringSupport>}
+        ></Route>
       </Route>
       <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
     </Routes>

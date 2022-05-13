@@ -6,32 +6,32 @@ export default function OurServices() {
     {
       title: "Support Consulting",
       desc: "ATEK has successfully placed candidates at all levels in a variety of companies. We deliver the talent our clients need, when they need it, at the rate they need us to work with.",
-      route: "careers",
+      route: "/support-consulting",
     },
     {
       title: "IT Cloud Solutions",
       desc: "We Provide 24/7 Cloud Support, we have Expert AWS, Azure, Google Cloud.",
-      route: "careers",
+      route: "/cloud-solutions",
     },
     {
       title: "Financial services",
       desc: "Our specialized recruiters connect our clients with a range of talent across the financial services industry",
-      route: "careers",
+      route: "/disaster-recovery",
     },
     {
       title: "Healthcare Staffing",
       desc: "We value the opinions of its patients and their families. The company routinely conducts patient satisfaction surveys assessing eight primary areas",
-      route: "careers",
+      route: "/cloud-desktop",
     },
     {
       title: "Construction Staffing",
       desc: "Our specialized recruiters connect our clients with a range of talent across the construction industry.",
-      route: "careers",
+      route: "/network-solutions",
     },
     {
       title: "Engineering Support",
       desc: "EASi provides a wide range of engineering and design services.",
-      route: "careers",
+      route: "/managed-it-services",
     },
   ];
 
